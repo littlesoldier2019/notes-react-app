@@ -58,6 +58,15 @@ class AddPost extends Component {
                         </input>                
                     </div>
                     <div className='input__field'>
+                        <label className="input__label">Background</label>
+                        <input className="input__text" 
+                            type="url" 
+                            name="link" 
+                            value={this.state.link} 
+                            onChange={this.handleChange}>
+                        </input>                
+                    </div>
+                    <div className='input__field'>
                         <label className="input__label">Write a New Post</label>
                         <textarea className="input__text"
                             type="text" 

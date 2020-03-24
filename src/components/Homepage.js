@@ -15,7 +15,7 @@ const HomePage = (props) => {
             <div>
                 <Link to='/newpost'><button className='btn btn-addPost'>New Post</button></Link>
             </div>
-            <div>
+            <div className='wrap'>
                 {postList}
             </div>
         </div>
