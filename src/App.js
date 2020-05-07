@@ -9,7 +9,7 @@ import AddPost from './components/AddPost';
 import ViewPost from './components/ViewPost';
 import EditPost from './components/EditPost';
 import DeletePost from './components/DeletePost';
-
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -83,6 +83,7 @@ class App extends Component {
               />}
             />
         </Switch>
+        <Footer />
       </div>
     );
   }

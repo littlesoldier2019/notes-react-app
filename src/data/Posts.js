@@ -12,7 +12,7 @@ export const posts = [
  {
    id : RandomId(),
    title : 'My talk at React Meetup',
-   category : 'Recreation',
+   category : 'Work',
    description : 'Hi.. Welcome to my talk at React Meet up. Integrify was founded in 2016 during the refugee crisis. The founders felt frustrated that talented refugees were idle and had nothing to do except wait. A pilot project was started, training asylum seekers in programming skills as a fast track to jobs that require no Finnish language and are based purely on meritocracy. The first pilot was successful and all the graduates got a job. As a result, the operations were expanded and all international talent were welcomed to join the program. Integrify moved to a bigger space at the startup hub Maria 01 and new team members were hired.',
    date : 'Feb 2, 2020',
    link : 'https://source.unsplash.com/820x900'
@@ -20,7 +20,7 @@ export const posts = [
  {
    id : RandomId(),
    title : 'Fun at Beach',
-   category : 'Recreation',
+   category : 'Travel',
    description : 'Hi.. Welcome to recreation. Integrify’s concept also convinced the judges at The Next Century Builders Challenge Competition (Vuosisadan Rakentajat) where Integrify came third and was awarded 150 000€. This meant a move to an even bigger space and even more students accepted to the program. Integrify’s concept also convinced the judges at The Next Century Builders Challenge Competition (Vuosisadan Rakentajat) where Integrify came third and was awarded 150 000€. This meant a move to an even bigger space and even more students accepted to the program.',
    date : 'Mar 1, 2020',
    link : 'https://source.unsplash.com/500x500'
@@ -32,5 +32,21 @@ export const posts = [
    description : 'Hi.. Welcome to sport. Since then over tens of people have graduated as junior software developers and the number keeps on growing. Our students are extremely talented and we have ourselves hired them as consultants. Integrify now has a team of 10 people, and ambitious plans for the future. Since then over tens of people have graduated as junior software developers and the number keeps on growing. Our students are extremely talented and we have ourselves hired them as consultants. Integrify now has a team of 10 people, and ambitious plans for the future.',
    date : 'Mar 4, 2020',
    link : 'https://source.unsplash.com/550x520'
- }
+ },
+ {
+  id : RandomId(),
+  title : 'Fun at Beach',
+  category : 'Cooking',
+  description : 'Hi.. Welcome to recreation. Integrify’s concept also convinced the judges at The Next Century Builders Challenge Competition (Vuosisadan Rakentajat) where Integrify came third and was awarded 150 000€. This meant a move to an even bigger space and even more students accepted to the program. Integrify’s concept also convinced the judges at The Next Century Builders Challenge Competition (Vuosisadan Rakentajat) where Integrify came third and was awarded 150 000€. This meant a move to an even bigger space and even more students accepted to the program.',
+  date : 'Sep 18, 2020',
+  link : 'https://source.unsplash.com/600x500'
+},
+{
+  id : RandomId(),
+  title : 'Running in the forest',
+  category : 'Sport',
+  description : 'Hi.. Welcome to sport. Since then over tens of people have graduated as junior software developers and the number keeps on growing. Our students are extremely talented and we have ourselves hired them as consultants. Integrify now has a team of 10 people, and ambitious plans for the future. Since then over tens of people have graduated as junior software developers and the number keeps on growing. Our students are extremely talented and we have ourselves hired them as consultants. Integrify now has a team of 10 people, and ambitious plans for the future.',
+  date : 'Apr 4, 2020',
+  link : 'https://source.unsplash.com/530x560'
+}
 ]

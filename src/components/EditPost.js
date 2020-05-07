@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-import './EditPost.css';
 import { Time } from '../data/Time';
 
 class EditPost extends Component {

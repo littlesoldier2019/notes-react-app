@@ -59,6 +59,5 @@ export const Time = () => {
     let year = today.getFullYear();
     let hours = twoDigitsDisplay(today.getHours());
     let minutes = twoDigitsDisplay(today.getMinutes());
-    let seconds = twoDigitsDisplay(today.getSeconds());
-    return (`${month} ${date}, ${year}`);   
+    return (`${hours} ${minutes} ${month} ${date}, ${year}`);   
 }
