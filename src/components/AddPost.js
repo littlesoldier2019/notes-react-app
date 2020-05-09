@@ -2,25 +2,16 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { RandomId } from '../data/RandomId';
 import { Time } from '../data/Time';
-import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
-import FilledInput from '@material-ui/core/FilledInput';
 import FormControl from '@material-ui/core/FormControl';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 
 const useStyles = theme => ({
@@ -37,21 +28,6 @@ const useStyles = theme => ({
       cardGrid: {
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
-      },
-      card: {
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-      },
-      cardMedia: {
-        paddingTop: '56.25%', // 16:9
-      },
-      cardContent: {
-        flexGrow: 1,
-      },
-      footer: {
-        backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(6),
       },
         root: {
             '& > *': {
@@ -156,7 +132,12 @@ class AddPost extends Component {
                                 onChange={this.handleChange}
                             /> 
                         </FormControl>
-                        <Button variant="outlined" color="primary" size="medium" onClick={this.handleSubmit}>
+                        <Button 
+                            variant="outlined" 
+                            color="primary" 
+                            size="medium" 
+                            onClick={this.handleSubmit}
+                        >
                         Submit
                         </Button>
                     </form>

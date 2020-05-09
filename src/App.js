@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { Route,Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
-
 import { posts } from './data/Posts';
-
 import HomePage from './components/Homepage';
 import AddPost from './components/AddPost';
 import ViewPost from './components/ViewPost';
 import EditPost from './components/EditPost';
 import DeletePost from './components/DeletePost';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +37,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <Switch>
           <Route 
             exact 
