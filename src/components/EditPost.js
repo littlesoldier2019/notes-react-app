@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import { RandomId } from '../data/RandomId';
 import { Time } from '../data/Time';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
@@ -80,7 +78,7 @@ class EditPost extends Component {
     }
 
     render() {
-        const { title, category, description, link } = this.state.post;
+        const { title, category, description, link, id, goBack } = this.state.post;
         const { classes } = this.props;
         return (
             <React.Fragment>
@@ -92,6 +90,8 @@ class EditPost extends Component {
                                 <InputLabel htmlFor="title">Title</InputLabel>
                                 <Input 
                                     id="title" 
+                                    type="text" 
+                                    name="title" 
                                     value={title} 
                                     onChange={this.handleChange}
                                 />
@@ -100,6 +100,8 @@ class EditPost extends Component {
                                 <InputLabel htmlFor="category">Category</InputLabel>
                                 <Input 
                                     id="category" 
+                                    type="text" 
+                                    name="category" 
                                     value={category} 
                                     onChange={this.handleChange}
                                     type='text'
@@ -109,6 +111,8 @@ class EditPost extends Component {
                                 <InputLabel htmlFor="link">Image</InputLabel>
                                 <Input 
                                     id="link" 
+                                    type="text" 
+                                    name="link" 
                                     value={link}  
                                     onChange={this.handleChange}
                                 />
@@ -117,15 +121,29 @@ class EditPost extends Component {
                                 <TextField
                                     id="content"
                                     label="Content"
+                                    type="text" 
+                                    name="description"
                                     multiline
                                     rows={20}
                                     value={description}  
                                     onChange={this.handleChange}
                                 /> 
                             </FormControl>
-                            <Button variant="outlined" color="primary" size="medium" onClick={this.handleSubmit}>
-                                Submit
-                            </Button>
+                            
+                            <Grid container spacing={2} justify="center">
+                                <Grid item>
+                                    <Button variant="outlined" color="primary"  size="medium" onClick={this.handleSubmit}>
+                                        Submit
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Link to={`/post/edit/${id}`}>
+                                        <Button variant="outlined" color="secondary" onClick={this.goBack}>
+                                            Cancel
+                                        </Button>
+                                    </Link>
+                                </Grid>
+                            </Grid>
                         </form>
                     </Container> 
                 </main>

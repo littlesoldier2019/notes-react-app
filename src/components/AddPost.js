@@ -101,6 +101,8 @@ class AddPost extends Component {
                             <InputLabel htmlFor="title">Title</InputLabel>
                             <Input 
                                 id="title" 
+                                type="text" 
+                                name="title"
                                 value={this.state.title} 
                                 onChange={this.handleChange}
                             />
@@ -109,6 +111,8 @@ class AddPost extends Component {
                             <InputLabel htmlFor="category">Category</InputLabel>
                             <Input 
                                 id="category" 
+                                type="text" 
+                                name="category"
                                 value={this.state.category} 
                                 onChange={this.handleChange}
                                 type='text'
@@ -118,6 +122,8 @@ class AddPost extends Component {
                             <InputLabel htmlFor="link">Image</InputLabel>
                             <Input 
                                 id="link" 
+                                type="url" 
+                                name="link"
                                 value={this.state.link}  
                                 onChange={this.handleChange}
                             />
@@ -126,6 +132,8 @@ class AddPost extends Component {
                             <TextField
                                 id="content"
                                 label="Content"
+                                type="text" 
+                                name="description"
                                 multiline
                                 rows={20}
                                 value={this.state.description}  
